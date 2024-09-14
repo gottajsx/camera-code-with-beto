@@ -29,11 +29,11 @@ npx create-expo-app@latest camera-code --template blank
 
 ## Troubleshoot
 
-1. Replace `import { Camera, CameraType } from 'expo-camera';` by 
+1. Replace `import { Camera, CameraType } from 'expo-camera';` with
 ```jsx
 import { Camera, CameraType } from 'expo-camera/legacy';`
 ```
-2. Replace `const [type, setType] = useState(Camera.Constants.Type.back)` by 
+2. Replace `const [type, setType] = useState(Camera.Constants.Type.back)` with
 ```jsx
 const [type, setType] = useState(CameraType.back);
 ```
