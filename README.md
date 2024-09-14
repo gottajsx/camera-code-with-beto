@@ -29,25 +29,9 @@ npx create-expo-app@latest camera-code --template blank
 
 ## Troubleshoot
 
-1.
-Replace
-```jsx
-import { Camera, CameraType } from 'expo-camera';
-```
-by 
-```jsx
-import { Camera, CameraType } from 'expo-camera/legacy';
-```
+1. Replace `import { Camera, CameraType } from 'expo-camera';` by `import { Camera, CameraType } from 'expo-camera/legacy';`
 
-2. 
-Replace
-```jsx
-const [type, setType] = useState(Camera.Constants.Type.back)
-```
-by
-```jsx
-const [type, setType] = useState(CameraType.back);
-```
+2. Replace `const [type, setType] = useState(Camera.Constants.Type.back)` by `const [type, setType] = useState(CameraType.back);`
 
 ## TO DO
 Fix problem with flash
